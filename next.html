@@ -1,40 +1,40 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kitty food</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-   <div class="wrap">
+   <div class="wrap"> 
     <header>
       <div class="header-left">
         <a href="index.html">
           <img src="css/logo.svg" alt="friskay logo" />
         </a>
-        <div class="divider"></div>
+        <div class="divider hide-mobile"></div>
         <a href="#" class="home hide-mobile">Home</a>
       </div>
 
       <nav>
-        <a href="#" class="menu-opn hide-dektop">
-          <img src="menu.svg" alt="open menu" />
+        <a href="#" class="menu-open hide-dektop">
+          <img src="menu.svg" alt="open menu">
         </a>
         <ul>
-          <li>
+          <li class="hide-dektop">
             <a href="#" class="menu-close">
               <img src="close.svg" alt="closing menu" />
             </a>
-            <li><a href="#">our food</a></li>
-            <li><a href="#">ingredients</a></li>
-            <li><a href="#">studies</a></li>
-            <li><a href="#">FAQ</a></li>
           </li>
+          <li><a href="#">our food</a></li>
+          <li><a href="#">ingredients</a></li>
+          <li><a href="#">studies</a></li>
+          <li><a href="#">FAQ</a></li>
         </ul>
+   
       </nav>
     </header>
     <MAIN>
@@ -55,5 +55,24 @@
       </div>
     </div>
    </div>
+<script>
+    const menu = document.querySelector('nav ul')
+    const menuBtn = document.querySelector('.menu-open')
+    const closeBtn = document.querySelector('.menu-close')
+
+    menubtn.addEventListener('click', () => {
+      menu.classList.add('open')
+    } )
+
+    closebtn.addEventListener('click', () => {
+      menu.classList.remove('open')
+    } )
+</script>    
+
   </body>
-</html>
+</html> 
+   
+
+  
+   
+
